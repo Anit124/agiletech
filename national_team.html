@@ -504,3 +504,40 @@
     </div>
     
   </footer>
+   <nav class="social">
+          <ul>
+              <li><a href="https://www.facebook.com/BJP4OBCMorcha"><i class="fa fa-facebook"></i><b>Facebook</b></a></li>
+              <li><a href="https://twitter.com/BJP4OBCMorcha"><i class="fa fa-twitter"></i><b>Twitter</b></a></li>
+             
+              <li><a href="https://www.youtube.com/@BJP4OBCMorcha"><i class="fa fa-youtube"></i><b>YouTube</b></a></li>
+              <li><a href="https://www.instagram.com/bjp4obcmorcha/"><i class="fa fa-instagram"></i><b>Instagram</b></a></li>
+              <li><a href="https://api.whatsapp.com/send?phone=8920636828" traget="_blank"><i class="fa fa-whatsapp"></i><b>whatsapp</b></a></li>
+          </ul>
+      </nav>
+</div>
+ <script>
+  var deadline = new Date("july 30, 2050 15:37:25").getTime();             
+var x = setInterval(function() {
+   var currentTime = new Date().getTime();                
+   var t = deadline - currentTime; 
+   var days = Math.floor(t / (30000 * 60 * 60 * 24)); 
+   var hours = Math.floor((t%(30000 * 60 * 60 * 24))/(30000 * 60 * 60)); 
+   var minutes = Math.floor((t % (30000 * 60 * 60)) / (30000 * 60)); 
+   var seconds = Math.floor((t % (30000 * 60)) / 1000); 
+   document.getElementById("day").innerHTML =days ; 
+   document.getElementById("hour").innerHTML =hours; 
+   document.getElementById("minute").innerHTML = minutes; 
+   document.getElementById("second").innerHTML =seconds; 
+   if (t < 0) {
+      clearInterval(x); 
+      document.getElementById("time-up").innerHTML = "TIME UP"; 
+      document.getElementById("day").innerHTML ='0'; 
+      document.getElementById("hour").innerHTML ='0'; 
+      document.getElementById("minute").innerHTML ='0' ; 
+      document.getElementById("second").innerHTML = '0'; 
+   } 
+}, 1000);  
+
+</script>
+</body>
+</html>
